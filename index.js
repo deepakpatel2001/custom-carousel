@@ -11,8 +11,8 @@ const allImages = [
 
 function showPhoto(index) {
     let singleimage = document.createElement('img');
-    // singleimage.style.transition = '0.2s ease';
     singleimage.src = allImages[index];
+    singleimage.style.animation = 'showImage 0.8s linear';
     images.append(singleimage);
 }
 
@@ -26,7 +26,7 @@ let data = setInterval(() => {
 }, 2000);
 
 right.addEventListener('click', () => {
-    clearInterval(data)
+    clearInterval(data);
     count = (count + 1) % allImages.length;
     showPhoto(count);
 });

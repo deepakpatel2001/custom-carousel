@@ -34,7 +34,15 @@ img {
     height: 100%;
     position: absolute;
     left: 0;
-    transition: left 0.8s;
+}
+
+@keyframes showImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .buttons {
