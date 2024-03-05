@@ -57,4 +57,14 @@ img {
     margin-top: 10px;
     margin-left: 10px;
     font-size: 22px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.left {
+    background-color: rgba(184, 55, 55, 0.729);
+}
+
+.right {
+    background-color: greenyellow;
 }
